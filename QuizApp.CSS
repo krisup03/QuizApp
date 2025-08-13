@@ -72,3 +72,10 @@ body{
     cursor:pointer;
     display: flex;
 }
+
+.btn.correct{
+    background:#9aeabc;
+}
+.btn.incorrect{
+    background:#ff9393;
+}
