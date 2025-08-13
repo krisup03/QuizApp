@@ -1,111 +1,94 @@
-const question=[
+const questions = [
     {
-    question: "who developed java?",
-    answers: [
-        {text:"abc", correct:false},
-        {text:"ac", correct:true},
-        {text:"bc", correct:false},
-        {text:"ab", correct:false},
-
-    ]
-},
-
-{
-    question: "who developed java?",
-    answers: [
-        {text:"abc", correct:false},
-        {text:"ac", correct:true},
-        {text:"bc", correct:false},
-        {text:"ab", correct:false},
-
-    ]
-},
-
-{
-    question: "who developed java?",
-    answers: [
-        {text:"abc", correct:false},
-        {text:"ac", correct:true},
-        {text:"bc", correct:false},
-        {text:"ab", correct:false},
-
-    ]
-},
-
-{question: "who developed java?",
-answers: [
-    {text:"abc", correct:false},
-    {text:"ac", correct:true},
-    {text:"bc", correct:false},
-    {text:"ab", correct:false},
-
-]
-},
-
-{
-    question: "who developed java?",
-    answers: [
-        {text:"abc", correct:false},
-        {text:"ac", correct:true},
-        {text:"bc", correct:false},
-        {text:"ab", correct:false},
-
-    ]
-},
-{
-    question: "who developed java?",
-    answers: [
-        {text:"abc", correct:false},
-        {text:"ac", correct:true},
-        {text:"bc", correct:false},
-        {text:"ab", correct:false},
-
-    ]
-},
-
-{
-    question: "who developed java?",
-    answers: [
-        {text:"abc", correct:false},
-        {text:"ac", correct:true},
-        {text:"bc", correct:false},
-        {text:"ab", correct:false},
-
-    ]
-},
-
-{ question: "who developed java?",
-answers: [
-    {text:"abc", correct:false},
-    {text:"ac", correct:true},
-    {text:"bc", correct:false},
-    {text:"ab", correct:false},
-
-]},
-
-
-{
-    question: "who developed java?",
-    answers: [
-        {text:"abc", correct:false},
-        {text:"ac", correct:true},
-        {text:"bc", correct:false},
-        {text:"ab", correct:false},
-
-    ]
-},
-
-
-{ question: "who developed java?",
-answers: [
-    {text:"abc", correct:false},
-    {text:"ac", correct:true},
-    {text:"bc", correct:false},
-    {text:"ab", correct:false},
-
-]
-}
-
+        question: "Who is known as the founder of Java?",
+        answers: [
+            { text: "Guido van Rossum", correct: false },
+            { text: "James Gosling", correct: true },
+            { text: "Bjarne Stroustrup", correct: false },
+            { text: "Dennis Ritchie", correct: false },
+        ]
+    },
+    {
+        question: "Which of the following is not a Java keyword?",
+        answers: [
+            { text: "static", correct: false },
+            { text: "volatile", correct: false },
+            { text: "extends", correct: false },
+            { text: "main", correct: true },
+        ]
+    },
+    {
+        question: "What is the entry point of a Java program?",
+        answers: [
+            { text: "start() method", correct: false },
+            { text: "run() method", correct: false },
+            { text: "main() method", correct: true },
+            { text: "init() method", correct: false },
+        ]
+    },
+    {
+        question: "Which of these is used for multi-line comments in Java?",
+        answers: [
+            { text: "// comment", correct: false },
+            { text: "/* comment */", correct: true },
+            { text: "", correct: false },
+            { text: "# comment", correct: false },
+        ]
+    },
+    {
+        question: "What does JVM stand for?",
+        answers: [
+            { text: "Java Version Machine", correct: false },
+            { text: "Java Virtual Memory", correct: false },
+            { text: "Java Virtual Machine", correct: true },
+            { text: "Java Voice Machine", correct: false },
+        ]
+    },
+    {
+        question: "Which access modifier is the most restrictive?",
+        answers: [
+            { text: "public", correct: false },
+            { text: "protected", correct: false },
+            { text: "private", correct: true },
+            { text: "default", correct: false },
+        ]
+    },
+    {
+        question: "Which data type can store the largest integer value?",
+        answers: [
+            { text: "long", correct: true },
+            { text: "int", correct: false },
+            { text: "short", correct: false },
+            { text: "byte", correct: false },
+        ]
+    },
+    {
+        question: "What is the superclass of all classes in Java?",
+        answers: [
+            { text: "Parent", correct: false },
+            { text: "Root", correct: false },
+            { text: "Class", correct: false },
+            { text: "Object", correct: true },
+        ]
+    },
+    {
+        question: "How do you create an object of a class in Java?",
+        answers: [
+            { text: "using the 'object' keyword", correct: false },
+            { text: "using the 'new' keyword", correct: true },
+            { text: "using the 'create' keyword", correct: false },
+            { text: "using the 'instanceof' keyword", correct: false },
+        ]
+    },
+    {
+        question: "Which of the following is an example of a primitive data type?",
+        answers: [
+            { text: "String", correct: false },
+            { text: "Array", correct: false },
+            { text: "int", correct: true },
+            { text: "Class", correct: false },
+        ]
+    }
 ];
 
 const questionElement=document.getElementById("question");
@@ -198,5 +181,6 @@ nextButton.addEventListener("click", ()=>{
         startQuiz();
     }
 });
+
 
 startQuiz();
